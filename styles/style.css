@@ -6,6 +6,8 @@ body {
     max-width: fit-content;
     margin: auto;
     font-size: 3vh;
+    background-color: antiquewhite;
+    border: solid 2px black;
 }
 
 .first table p{
