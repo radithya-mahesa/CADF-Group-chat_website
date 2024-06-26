@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+
+.first {
+    max-width: fit-content;
+    margin: auto;
+    font-size: 3vh;
+}
+
+.first table p{
+    padding: 0px 10px 0px 10px;
+}
