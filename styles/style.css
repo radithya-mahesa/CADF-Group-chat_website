@@ -1,15 +1,35 @@
-body {
-    margin: 0;
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
 }
 
-.first {
-    max-width: fit-content;
-    margin: auto;
-    font-size: 3vh;
-    background-color: antiquewhite;
-    border: solid 2px black;
+.CAD {
+    background-color: #FEB941;
 }
 
-.first table p{
-    padding: 0px 10px 0px 10px;
+.d-inline-block {
+    margin-left: 10px;
+}
+
+nav .navbar-brand {
+    font-family: "Oswald";
+    color: #FDE49E;
+    font-size: 4vh;
+    
+}
+
+.navbar-nav {
+    flex-direction: row !important;
+
+    gap: 10px;
+}
+
+.nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media only screen and (min-width: 600px){
+    
 }
