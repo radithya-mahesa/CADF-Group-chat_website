@@ -30,6 +30,57 @@ nav .navbar-brand {
     margin-right: 10px;
 }
 
-@media only screen and (min-width: 600px){
-    
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+    position:relative;
+}
+
+#Home{
+    margin-top: 150px;
+    display:flex;
+    flex-direction: column;
+}
+
+.kolom{
+    order:2;
+    margin: 50px 0;
+    font-size: 2em;
+}
+
+#Home .gambar{
+    order:1 ;
+    text-align: center;
+}
+
+#Home .gambar img{
+    width: 60%;
+    box-shadow: 70px -16px #DD761C;
+}
+
+
+
+
+@media only screen and (min-width: 991px){
+    #Home{
+        display:flex;
+        flex-direction: row;
+        margin-top: 10%;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    #Home .gambar img{
+        margin-top: 30px;
+        width: 400px;
+        box-shadow: 70px -16px #DD761C;
+    }
+
+    .kolom{
+        order:1;
+    }
+
+    #Home .gambar{
+        order:2;
+    }
 }
