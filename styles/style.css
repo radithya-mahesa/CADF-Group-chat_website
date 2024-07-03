@@ -5,7 +5,10 @@
 }
 
 .CAD {
-    background-color: #FEB941;
+    background-color: #192734;
+
+    height: 100vh;
+    width: 100%;
 }
 
 .d-inline-block {
@@ -14,15 +17,14 @@
 
 nav .navbar-brand {
     font-family: "Oswald";
-    color: #FDE49E;
+    color: maroon;
+
     font-size: 4vh;
-    
+    font-weight: 600;
 }
 
 .navbar-nav {
     flex-direction: row !important;
-
-    gap: 10px;
 }
 
 .nav-item {
@@ -30,10 +32,15 @@ nav .navbar-brand {
     margin-right: 10px;
 }
 
+.nav-item a {
+    border-radius: 4px;
+}
+
 .wrapper{
     width: 90%;
     margin: 0 auto;
-    position:relative;
+
+    position: relative;
 }
 
 #Home{
@@ -43,9 +50,18 @@ nav .navbar-brand {
 }
 
 .kolom{
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #FBA834;
+
     order:2;
     margin: 50px 0;
-    font-size: 2em;
+    padding: 2vh;
+    
+    font-size: 1.2em;
+
+    border: 1px solid transparent;
+    border-radius: 7px;
+    box-shadow: 10px 12px 0 1px maroon;
 }
 
 #Home .gambar{
@@ -55,9 +71,14 @@ nav .navbar-brand {
 
 #Home .gambar img{
     width: 60%;
-    box-shadow: 70px -16px #DD761C;
+    box-shadow: 30px -16px #FBA834;
 }
 
+.link-connect {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
 
 
 
@@ -73,14 +94,20 @@ nav .navbar-brand {
     #Home .gambar img{
         margin-top: 30px;
         width: 400px;
-        box-shadow: 70px -16px #DD761C;
     }
 
-    .kolom{
+    .kolom {
         order:1;
+        
+        margin: 50px 50px 50px 0;
+        font-size: 2em;
     }
 
     #Home .gambar{
         order:2;
+    }
+
+    .link-connect {
+        flex-direction: row;
     }
 }
