@@ -2,6 +2,8 @@
     text-decoration: none;
     margin: 0px;
     padding: 0px;
+
+    font-family: "Nunito Sans";
 }
 
 .CAD {
@@ -33,7 +35,67 @@ nav .navbar-brand {
 }
 
 .nav-item a {
-    border-radius: 4px;
+    font-family: Helvetica;
+    position: relative;
+    color: maroon;
+    text-decoration: none;
+    font-size: 2.5vh;
+    font-weight: 700;
+}
+
+.nav-item a:hover {
+    color: #000;
+}
+
+.home a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #5cb85c;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+ 
+.home a:hover::before {
+    transform: scaleX(1);
+}
+
+.info a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #0275d8;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+ 
+.info a:hover::before {
+    transform: scaleX(1);
+}
+
+.about a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #d9534f;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+ 
+.about a:hover::before {
+    transform: scaleX(1);
 }
 
 .wrapper{
@@ -77,10 +139,69 @@ nav .navbar-brand {
 .link-connect {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 2em;
 }
 
+.btn-text {
+    flex: 1;
+    text-align: left;
+}
 
+.fab {
+    text-align: left;
+}
+
+.link-connect .btn-wa  {
+    background-color: transparent;
+    color: #5cb85c;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 470;
+    border-radius: 3px;
+    border: 2px solid #5cb85c;
+    padding: 1rem 2rem;
+    box-shadow: .9px 1px 0 0 #5cb85c, 1.5px 2px 0 0 #5cb85c, 2.5px 3px 0 0 #5cb85c, 3.5px 4px 0 0 #5cb85c, 4.5px 5px 0 0 #5cb85c, 5.5px 6px 0 0 #5cb85c, 6.5px 7px 0 0 #5cb85c, 7.5px 8px 0 0 #5cb85c, 8.5px 9px 0 0 #5cb85c, 9.5px 10px 0 0 #5cb85c;
+    position: relative;
+    inset: 0;
+    cursor: pointer;
+    transform: rotateX(0), rotateY(0) rotateZ(0);
+    display: inline-block;
+    outline: 2px dashed transparent;
+    transition: all 600ms ease;
+}
+
+.btn-wa:hover {
+    color: #5cb85c;
+    inset: 6px 0 5.5px 0;
+    transform: rotateX(5deg) rotateY(3deg) rotateZ(.25deg);
+    box-shadow: none;
+}
+
+.link-connect .btn-dc  {
+    background-color: transparent;
+    color: #387ADF;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 470;
+    border-radius: 3px;
+    border: 2px solid #387ADF;
+    padding: 1rem 2rem;
+    box-shadow: .9px 1px 0 0 #387ADF, 1.5px 2px 0 0 #387ADF, 2.5px 3px 0 0 #387ADF, 3.5px 4px 0 0 #387ADF, 4.5px 5px 0 0 #387ADF, 5.5px 6px 0 0 #387ADF, 6.5px 7px 0 0 #387ADF, 7.5px 8px 0 0 #387ADF, 8.5px 9px 0 0 #387ADF, 9.5px 10px 0 0 #387ADF;
+    position: relative;
+    inset: 0;
+    cursor: pointer;
+    transform: rotateX(0), rotateY(0) rotateZ(0);
+    display: inline-block;
+    outline: 2px dashed transparent;
+    transition: all 600ms ease;
+}
+
+.btn-dc:hover {
+    color: #387ADF;
+    inset: 6px 0 5.5px 0;
+    transform: rotateX(5deg) rotateY(3deg) rotateZ(.25deg);
+    box-shadow: none;
+}
 
 @media only screen and (min-width: 991px){
     #Home{
@@ -104,10 +225,20 @@ nav .navbar-brand {
     }
 
     #Home .gambar{
-        order:2;
+        order:2;    
     }
 
     .link-connect {
         flex-direction: row;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    nav .navbar-brand {
+        font-size: 3.5vh;
+        font-weight: 600;
+    }
+    .nav-item a {
+        font-size: 2vh;
     }
 }
