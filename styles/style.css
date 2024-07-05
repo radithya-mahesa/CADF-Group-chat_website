@@ -233,6 +233,7 @@ nav .navbar-brand {
     color: #fff;
     
 }
+
 #Info .admin-list .title {
     margin: 50px 0;
 }
@@ -240,18 +241,47 @@ nav .navbar-brand {
 #Info .admin-list .admin-info {
     flex: 1 1 30%;
     background-color: #333A73;
-    /* box-shadow: 20px -10px #387ADF; */
     box-shadow: .9px -4px 0 0 #387ADF, 3.5px -6px 0 0 #387ADF, 5.5px -8px 0 0 #387ADF, 7.5px -10px 0 0 #387ADF, 9.5px -12px 0 0 #387ADF, 11.5px -14px 0 0 #387ADF, 13.5px -16px 0 0 #387ADF, 15.5px -18px 0 0 #387ADF, 17.5px -20px 0 0 #387ADF, 19.5px -22px 0 0 #387ADF;
 
 
     height: 70%;
 }
 
+#Info .discord-info {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    justify-content: center;
+    align-items: baseline;
+
+    margin: 50px 0;
+}
+
+#Info .discord-info img {
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#Info .discord-image {
+    box-shadow: 20px -16px #333A73;
+}
+
+
+#Info .discord-info ul {
+    padding: 20px;
+    margin: 0;
+    background-color: #FBA834;
+
+    border-radius: 5px;
+    box-shadow: 20px 10px maroon;
+}
+
 #Info img {
     width: 100%;
     height: 100%;
 
-    padding: 20px;
+    padding: 0;
 
     object-fit: cover;
     object-position: center;
@@ -267,7 +297,42 @@ nav .navbar-brand {
     color: #fff;
     text-align: center;
     font-size: 1em;
-    
+}
+
+#Info li {
+    color: maroon;
+    font-size: 2em;
+    text-decoration: none;
+    overflow: hidden;
+    font-family: "Kanit";
+}
+
+#About-Us .title h1 {
+    margin-top: 60px;
+    text-align: center;
+    color: #fff;
+}
+
+.accordion {
+    margin: 100px 0;
+}
+
+footer {
+    font-family: sans-serif;
+    font-size: 10px;
+    background-color: #0e123f;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
 }
 
 @media only screen and (min-width: 991px){
@@ -299,6 +364,7 @@ nav .navbar-brand {
         flex-direction: row;
     }
 }
+
 @media only screen and (max-width: 620px) {
     #Info .admin-list .admin-info {
         box-shadow: .9px -2px 0 0 #387ADF, 1.5px -3px 0 0 #387ADF, 2.5px -4px 0 0 #387ADF, 3.5px -5px 0 0 #387ADF, 4.5px -6px 0 0 #387ADF, 5.5px -7px 0 0 #387ADF, 6.5px -8px 0 0 #387ADF, 7.5px -9px 0 0 #387ADF, 8.5px -10px 0 0 #387ADF, 9.5px -11px 0 0 #387ADF;
@@ -312,6 +378,22 @@ nav .navbar-brand {
         margin: 50px 0;
         gap: 50px;
         flex-direction: column;
+    }
+
+    #Info .admin-list .title {
+        margin: 20px 0;
+    }
+
+    #Info .discord-info {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    #Info .discord-image img{
+        width: 250px;
+        object-fit: cover;
+        object-position: center;
     }
 }
 
